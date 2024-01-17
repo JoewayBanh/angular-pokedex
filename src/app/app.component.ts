@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { PokemonDataComponent } from './components/pokemon-data/pokemon-data.component';
+import { Component, Inject, Injectable } from '@angular/core';
+import { json } from 'body-parser';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  constructor(readonly pokemonDataComponent: PokemonDataComponent) {}
   showPokemon() {
-    console.log('asdsd');
+    console.log('shown pokemon: ' + this.pokemonDataComponent.pokemonData?.id);
   }
 }

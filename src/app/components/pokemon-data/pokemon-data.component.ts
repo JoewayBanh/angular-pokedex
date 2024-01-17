@@ -1,6 +1,5 @@
-import { PokemonInfoService } from './../../services/pokemon-info.service';
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { firstValueFrom } from 'rxjs';
 
 @Component({
   selector: 'app-pokemon-data',
@@ -8,11 +7,18 @@ import { firstValueFrom } from 'rxjs';
   styleUrls: ['./pokemon-data.component.scss'],
 })
 export class PokemonDataComponent implements OnInit {
-  pokemon: any;
-  constructor(private readonly pokemonInfoService: PokemonInfoService) {}
+  pokemonData: any;
+  constructor(private http: HttpClient) {}
 
-  ngOnInit(): void {
-    this.pokemon = this.pokemonInfoService.getPokemonData();
-    console.log(firstValueFrom(this.pokemon.name));
+  ngOnInit() {
+    this.getPokemonData();
+  }
+  getPokemonData() {
+    this.http
+      .get('https://pokeapi.co/api/v2/pokemon/ditto')
+      .subscribe((data) => {
+        console.log(data);
+        this.pokemonData = data;
+      });
   }
 }
