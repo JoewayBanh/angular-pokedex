@@ -1,6 +1,5 @@
 import { PokemonDataComponent } from './components/pokemon-data/pokemon-data.component';
-import { Component, Inject, Injectable } from '@angular/core';
-import { json } from 'body-parser';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
