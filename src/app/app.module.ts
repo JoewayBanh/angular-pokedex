@@ -4,9 +4,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PokemonDataComponent } from './components/pokemon-data/pokemon-data.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
-  declarations: [AppComponent, PokemonDataComponent],
+  declarations: [AppComponent, PokemonDataComponent, NavbarComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [PokemonDataComponent],
   bootstrap: [AppComponent],

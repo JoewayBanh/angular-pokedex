@@ -19,8 +19,8 @@ export class PokemonDataComponent implements OnInit {
   getPokemonData() {
     this.http
       // .get('https://pokeapi.co/api/v2/pokemon/ditto')
-      //    .get(`https://pokeapi.co/api/v2/pokemon/${this.pokemonId}/`)
-      .get(`https://pokeapi.co/api/v2/pokemon/10272/`)
+      .get(`https://pokeapi.co/api/v2/pokemon/${this.pokemonId}/`)
+      // .get(`https://pokeapi.co/api/v2/pokemon/10272/`)
 
       .subscribe((data) => {
         console.log(data);
