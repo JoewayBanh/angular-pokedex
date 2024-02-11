@@ -4,7 +4,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { PokemonDataComponent } from './components/pokemon-data/pokemon-data.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomePageComponent },
+  { path: '', component: HomePageComponent },
   { path: 'poke-data', component: PokemonDataComponent },
 ];
 

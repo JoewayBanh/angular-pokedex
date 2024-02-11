@@ -1,4 +1,3 @@
-import { PokemonDataComponent } from './components/pokemon-data/pokemon-data.component';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  constructor(readonly pokemonDataComponent: PokemonDataComponent) {}
+  constructor() {}
 }
