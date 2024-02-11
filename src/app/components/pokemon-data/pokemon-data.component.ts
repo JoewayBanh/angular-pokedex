@@ -10,22 +10,20 @@ export class PokemonDataComponent implements OnInit {
   pokemonData?: any;
   favPokemonData?: any;
   pokemonName: string = '';
-  pokemonId: number = 1;
-  favPokemonId: number = 1;
+  pokemonId: number = 0;
+  favPokemonId: number = 0;
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    this.pokemonId = Math.floor(Math.random() * 152);
+    this.pokemonId = Math.floor(Math.random() * 1025);
+    this.favPokemonId = Math.floor(Math.random() * 152);
     this.getPokemonData();
     this.getFavPokemonData();
   }
 
   getPokemonData() {
     this.http
-      // .get('https://pokeapi.co/api/v2/pokemon/ditto')
       .get(`https://pokeapi.co/api/v2/pokemon/${this.pokemonId}/`)
-      // .get(`https://pokeapi.co/api/v2/pokemon/10272/`)
-
       .subscribe((data) => {
         console.log(data);
         this.pokemonData = data;

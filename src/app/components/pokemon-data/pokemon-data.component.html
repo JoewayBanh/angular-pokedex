@@ -1,38 +1,33 @@
 <main>
   <section *ngIf="this.pokemonData" class="random-pokemon">
     <img src="{{ this.pokemonData?.sprites.front_default }}" />
-    <p>Name: {{ capitalizeName(this?.pokemonData) }}</p>
-    <p>
-      {{ this.pokemonData?.stats[0]?.["base_stat"] }}
-      {{ this.pokemonData?.stats[0]?.["stat"]["name"].toUpperCase() }}
+    <img src="{{ this.pokemonData?.sprites.other.showdown.front_default }}" />
+    <h3 class="poke-name">
+      {{ capitalizeName(this?.pokemonData) }}
+    </h3>
+    <p class="stats-container" *ngFor="let stat of pokemonData?.stats">
+      <span> {{ capitalizeFirstLetter(stat?.stat?.name) }}</span>
+      <span> {{ stat?.base_stat }}</span>
     </p>
-    <p>
-      {{ this.pokemonData?.stats[1]?.["base_stat"] }}
-      {{ capitalizeFirstLetter(this.pokemonData?.stats[1]?.["stat"]["name"] )}}
-    </p>
-    <p>
-      {{ this.pokemonData?.stats[2]?.["base_stat"] }}
-      {{ capitalizeFirstLetter(this.pokemonData?.stats[2]?.["stat"]["name"] )}}
-    </p>
-    <p>
-      {{ this.pokemonData?.stats[3]?.["base_stat"] }}
-      {{ capitalizeFirstLetter(this.pokemonData?.stats[3]?.["stat"]["name"] )}}
-    </p>
-    <p>
-      {{ this.pokemonData?.stats[4]?.["base_stat"] }}
-      {{ capitalizeFirstLetter(this.pokemonData?.stats[4]?.["stat"]["name"] )}}
-    </p>
-    <p>
-      {{ this.pokemonData?.stats[5]?.["base_stat"] }}
-      {{ capitalizeFirstLetter(this.pokemonData?.stats[5]?.["stat"]["name"]) }}
-    </p>
-
-    <button (click)="getRandomPokemon()">Click to randomize!</button>
+    <button class="randomizer-button" (click)="getRandomPokemon()">
+      Click to randomize!
+    </button>
   </section>
 
   <section *ngIf="this.favPokemonData" class="fav-pokemon">
     <img src="{{ this.favPokemonData?.sprites.front_default }}" />
-    <p>Name: {{ capitalizeFirstLetter(this.pokemonData?.name) }}</p>
-    <button (click)="getRandomFavPokemon()">Click to randomize!</button>
+
+    <h3 class="poke-name">
+      {{ capitalizeFirstLetter(this.favPokemonData?.name) }}
+    </h3>
+
+    <p class="stats-container" *ngFor="let stat of favPokemonData?.stats">
+      <span> {{ capitalizeFirstLetter(stat?.stat?.name) }}</span>
+      <span>{{ stat?.base_stat }}</span>
+    </p>
+
+    <button class="randomizer-button" (click)="getRandomFavPokemon()">
+      Click to randomize!
+    </button>
   </section>
 </main>
