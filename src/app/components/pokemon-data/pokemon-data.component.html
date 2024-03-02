@@ -20,7 +20,11 @@
     <h3 class="poke-name">
       {{ capitalizeFirstLetter(this.favPokemonData?.name) }}
     </h3>
-
+    <div class="stats-container types-container">
+      <h4 *ngFor="let type of favPokemonData?.types">
+        <span> {{ capitalizeFirstLetter(type.type.name) }}</span>
+      </h4>
+    </div>
     <p class="stats-container" *ngFor="let stat of favPokemonData?.stats">
       <span> {{ capitalizeFirstLetter(stat?.stat?.name) }}</span>
       <span>{{ stat?.base_stat }}</span>
@@ -31,4 +35,3 @@
     </button>
   </section>
 </main>
-<button routerLink="/">Go to Home page</button>

@@ -45,6 +45,7 @@ export class PokemonDataComponent implements OnInit {
     this.pokemonId = Math.floor(Math.random() * 1025);
     this.getPokemonData();
     console.log(this.pokemonId);
+    console.log(this.pokemonData);
   }
   getRandomFavPokemon() {
     this.favPokemonId = Math.floor(Math.random() * 150);
