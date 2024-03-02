@@ -14,7 +14,7 @@ export class HomePageComponent implements OnInit {
   navigateToPokeData() {
     this.router.navigateByUrl('/poke-data');
   }
-  navigateToHomePage() {
-    this.router.navigateByUrl('/');
+  navigateToPokeListPage() {
+    this.router.navigateByUrl('/poke-list');
   }
 }

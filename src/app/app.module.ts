@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { PokemonDataComponent } from './components/pokemon-data/pokemon-data.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { PokeListComponent } from './poke-list/poke-list.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +15,8 @@ import { HomePageComponent } from './home-page/home-page.component';
     PokemonDataComponent,
     NavbarComponent,
     HomePageComponent,
+    PokeListComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [PokemonDataComponent],
