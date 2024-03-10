@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "GB-font";
+  src: url("../../assets/fonts/Gbboot-ALpM.ttf");
+}
+main {
+  height: 90vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  .home-page-btns {
+    padding: 0.75rem;
+    border-radius: 1rem;
+    font-family: GB-font;
+    font-size: 2rem;
+  }
+}

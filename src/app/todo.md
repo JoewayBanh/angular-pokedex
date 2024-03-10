@@ -7,6 +7,8 @@
 - Animation for stats
 - Colour the types. E.g. Fire has red background
 
+- Search bar(?)
+
 - Page with list of pokemon should display in a grid with number, name, type, img(?)
 
 - Hamburger menu in the navbar to navigate to Home (first page) and to the list page

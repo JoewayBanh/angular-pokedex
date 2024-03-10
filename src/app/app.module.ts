@@ -7,7 +7,7 @@ import { PokemonDataComponent } from './components/pokemon-data/pokemon-data.com
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { PokeListComponent } from './poke-list/poke-list.component';
-import { FooterComponent } from './footer/footer.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [

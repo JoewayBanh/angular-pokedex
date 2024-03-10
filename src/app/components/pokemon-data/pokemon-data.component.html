@@ -5,6 +5,11 @@
     <h3 class="poke-name">
       {{ capitalizeName(this?.pokemonData) }}
     </h3>
+    <div class="stats-container types-container">
+      <h4 *ngFor="let type of pokemonData?.types">
+        <span> {{ capitalizeFirstLetter(type.type.name) }}</span>
+      </h4>
+    </div>
     <p class="stats-container" *ngFor="let stat of pokemonData?.stats">
       <span> {{ capitalizeFirstLetter(stat?.stat?.name) }}</span>
       <span> {{ stat?.base_stat }}</span>
