@@ -1,4 +1,29 @@
-footer {
-  height: 5vh;
-  background-color: wheat;
+.footer-container {
+  //height: 5vh;
+  background-color: rgb(64, 176, 136);
+  display: flex;
+  padding: 1rem;
+
+  h4 {
+    justify-self: center;
+    font-size: 1.5rem;
+    flex: 3 1 40rem;
+  }
+  ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  li {
+    display: inline;
+  }
 }
+
+/*
+footer h4 {
+  flex: 3 1 40rem;
+  font-size: calc(1.4rem + 1vw);
+}
+*/

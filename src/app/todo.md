@@ -6,6 +6,7 @@
 - "Waiting" animation for randomizer page when API hasn't finished yet
 - Animation for stats
 - Colour the types. E.g. Fire has red background
+- When clicking on sprite image the gif of moving sprite will appear
 
 - Search bar(?)
 
