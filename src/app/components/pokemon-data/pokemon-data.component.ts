@@ -30,10 +30,10 @@ export class PokemonDataComponent implements OnInit {
       });
     console.log(this.pokemonId);
   }
+
   getFavPokemonData() {
     this.http
       .get(`https://pokeapi.co/api/v2/pokemon/${this.favPokemonId}/`)
-
       .subscribe((data) => {
         console.log(data);
         this.favPokemonData = data;

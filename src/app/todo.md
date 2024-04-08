@@ -1,7 +1,7 @@
 - Main page with two buttons
 
   - One for the randomizer page
-  - One for a list of pokemon
+  - One for a list of pokemon (lazy loading)
 
 - "Waiting" animation for randomizer page when API hasn't finished yet
 - Animation for stats
