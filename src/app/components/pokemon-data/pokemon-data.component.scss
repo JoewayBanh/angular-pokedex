@@ -1,3 +1,7 @@
+:host {
+  height: 100%;
+  margin: auto;
+}
 img {
   height: auto;
   width: auto;
@@ -7,7 +11,6 @@ img {
 }
 main {
   width: 100vw;
-  height: 80vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;

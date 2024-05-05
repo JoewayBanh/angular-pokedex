@@ -1,10 +1,9 @@
 <ul *ngIf="this.pokemonData" class="pokelist-item">
   <li *ngFor="let pokemon of pokemonData">
     <img src="{{ this.pokemon?.sprites.front_default }}" />
+    <p>{{ pokemon.id }}</p>
     <p>
-      {{ pokemon.id }} -
       {{ pokemon.name.charAt(0).toUpperCase() + pokemon?.name.slice(1) }}
     </p>
   </li>
 </ul>
-<button routerLink="/">Go to Home page</button>

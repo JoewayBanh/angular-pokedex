@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class PokeListComponent implements OnInit {
   pokemonData?: any[] = [];
   pokemonId: number = 0;
-  numberOfPokemon: number = 151;
+  numberOfPokemon: number = 494;
 
   constructor(private http: HttpClient) {}
 

@@ -1,9 +1,13 @@
 @font-face {
   font-family: "GB-font";
-  src: url("../../assets/fonts/Gbboot-ALpM.ttf");
+  src: url("../../../assets/fonts/Gbboot-ALpM.ttf");
+}
+:host {
+  min-height: 100%;
+  height: 100%;
+  margin: auto;
 }
 main {
-  height: 88vh;
   width: auto;
   display: flex;
   justify-content: center;
