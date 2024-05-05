@@ -1,7 +1,7 @@
 <main>
   <section *ngIf="this.pokemonData" class="random-pokemon">
     <img src="{{ this.pokemonData?.sprites.front_default }}" />
-    <img src="{{ this.pokemonData?.sprites.other.showdown.front_default }}" />
+    <!-- <img src="{{ this.pokemonData?.sprites.other.showdown.front_default }}" /> -->
     <h3 class="poke-name">
       {{ capitalizeName(this?.pokemonData) }}
     </h3>

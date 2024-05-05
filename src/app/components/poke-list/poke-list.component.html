@@ -1,4 +1,4 @@
-<ul *ngIf="this.pokemonData">
+<ul *ngIf="this.pokemonData" class="pokelist-item">
   <li *ngFor="let pokemon of pokemonData">
     <img src="{{ this.pokemon?.sprites.front_default }}" />
     <p>

@@ -5,8 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PokemonDataComponent } from './components/pokemon-data/pokemon-data.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { HomePageComponent } from './home-page/home-page.component';
-import { PokeListComponent } from './poke-list/poke-list.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
+import { PokeListComponent } from './components/poke-list/poke-list.component';
 import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
