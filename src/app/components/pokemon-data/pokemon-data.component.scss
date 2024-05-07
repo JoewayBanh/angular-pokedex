@@ -1,6 +1,11 @@
+@font-face {
+  font-family: "GB-font";
+  src: url("../../../assets/fonts/Gbboot-ALpM.ttf");
+}
 :host {
   height: 100%;
   margin: auto;
+  font-family: "GB-font";
 }
 img {
   height: auto;
@@ -18,12 +23,14 @@ main {
 .stats-container {
   display: flex;
   justify-content: space-between;
+  padding: 0.25rem 0;
 }
 .stats-container.types-container {
-  background-color: red;
+  // background-color: red;
   border: 2px solid black;
   display: flex;
   justify-content: space-around;
+  margin-bottom: 1rem;
 }
 section {
   display: flex;
@@ -40,4 +47,58 @@ section {
   padding: 0.5rem 0;
   display: flex;
   justify-content: center;
+}
+.normal {
+  background-color: white;
+}
+.fire {
+  background-color: firebrick;
+}
+.water {
+  background-color: blue;
+}
+.electric {
+  background-color: yellow;
+}
+.grass {
+  background-color: green;
+}
+.ice {
+  background-color: rgb(74, 218, 240);
+}
+.fighting {
+  background-color: brown;
+}
+.poison {
+  background-color: purple;
+}
+.ground {
+  background-color: rgb(176, 159, 127);
+}
+.flying {
+  background-color: rgb(136, 170, 227);
+}
+.psychic {
+  background-color: rgb(216, 91, 112);
+}
+.bug {
+  background-color: rgb(166, 181, 144);
+}
+.rock {
+  background-color: rgb(139, 125, 100);
+}
+.ghost {
+  background-color: rgb(80, 80, 162);
+}
+.dragon {
+  background-color: rgb(84, 64, 175);
+}
+.dark {
+  background-color: rgb(75, 55, 42);
+}
+.steel {
+  background-color: grey;
+}
+.fairy {
+  background-color: rgb(249, 198, 207);
 }
